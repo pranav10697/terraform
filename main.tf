@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1"
 }
-
+/*
 module "vpc" {
     source = "./module/vpc"
     this_vpc_cidr_block = "12.11.0.0/16"
@@ -18,8 +18,8 @@ module "vpc" {
     this_def_Route_example_cidr_block = "0.0.0.0/0"
     this_def_Route_example_tag = "default" 
 } 
+*/
 
-/*
 module "ec2" {
     source = "./module/ec2"
     this_aws_instance_ami = "ami-0eb5115914ccc4bc2"
@@ -35,4 +35,4 @@ module "ec2" {
     this_sg_vpc_id = module.vpc.vpc_id
     //this_aws_vpc_id = module.aws_vpc.aws_vpc_id
 }
-*/
+
